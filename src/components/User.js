@@ -36,7 +36,7 @@ export const User = () =>
         e.preventDefault();
         let nptStatus = true
         let nextPageToken = ""
-        const key = "YOUR_YOUTUBE_API_KEY"
+        const key = "YOUTUBE_API_KEY"
 
         while ( nptStatus ) {
 
