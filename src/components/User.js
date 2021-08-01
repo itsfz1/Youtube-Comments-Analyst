@@ -36,7 +36,7 @@ export const User = () =>
         e.preventDefault();
         let nptStatus = true
         let nextPageToken = ""
-        const key = "AIzaSyCRHTNzE-WM6lDmmCIwZyxSoJ7Q9cz2zGw"
+        const key = "YOUR_YOUTUBE_API_KEY"
 
         while ( nptStatus ) {
 
@@ -97,9 +97,9 @@ export const User = () =>
                 Negative: {intensity.neg + ' | '}
                 Neutral: {intensity.neu + ' | '}
                 Positive: {intensity.pos}
-                {intensity.compound >= 0.05 ? <img src="http://localhost:3000/positive.png" /> :
-                    ( intensity.compound > -0.05 && intensity.compound < 0.05 ) ? <img src="http://localhost:3000/neutral.png" /> :
-                        <img src="http://localhost:3000/positive.png" />
+                {intensity.compound >= 0.05 ? <img src="http://localhost:3000/positive.png" alt="Positive" /> :
+                    ( intensity.compound > -0.05 && intensity.compound < 0.05 ) ? <img src="http://localhost:3000/neutral.png" alt="Neutral" /> :
+                        <img src="http://localhost:3000/positive.png" alt="Negative" />
                 }
             </span>
             }
